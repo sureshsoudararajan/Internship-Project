@@ -1,168 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,600,700,800,900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Maven Pro", sans-serif;
+}
+.wrapper {
+  height: 100vh;
+}
+.myColor {
+  background-image: linear-gradient(to right, #68d391 0%, #2f855a 100%); /* green-400 to green-600 */
+}
+.myShadow {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px; /* Add this line for border radius */
 }
 
-body {
-    background: linear-gradient(to right, #6DD5FA, #2980B9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+.myBtn {
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  border: none;
 }
-
-.container {
-    width: 100%;
-    max-width: 400px;
-    background-color: white;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    text-align: center;
+.myBtn:hover {
+  background-image: linear-gradient(to right, #495aff 0%, #0acffe 100%);
 }
-
-.form-box h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    color: #333;
+.myHr {
+  height: 2px;
+  border-radius: 100px;
 }
-
-.input-box {
-    position: relative;
-    margin-bottom: 1.5rem;
+.myLinkBtn {
+  border-radius: 100px;
+  width: 50%;
+  border: 2px solid #fff;
 }
-
-.input-box input {
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    transition: 0.3s ease-in-out;
+@media (max-width: 720px) {
+  .wrapper {
+    margin: 2px;
+  }
 }
-
-.input-box input:focus {
-    border-color: #2980B9;
-}
-
-.input-box label {
-    position: absolute;
-    top: 50%;
-    left: 0.75rem;
-    transform: translateY(-50%);
-    background-color: white;
-    padding: 0 0.25rem;
-    pointer-events: none;
-    transition: 0.3s ease-in-out;
-    color: #aaa;
-}
-
-.input-box input:focus + label,
-.input-box input:not(:placeholder-shown) + label {
-    top: -0.75rem;
-    left: 0.5rem;
-    font-size: 0.75rem;
-    color: #2980B9;
-}
-
-.submit-btn {
-    width: 100%;
-    padding: 0.75rem;
-    background: linear-gradient(to right, #6DD5FA, #2980B9);
-    border: none;
-    color: white;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.submit-btn:hover {
-    background: linear-gradient(to right, #2980B9, #6DD5FA);
-}
-
-.toggle-text {
-    margin-top: 1rem;
-    color: #555;
-}
-
-.toggle-text a {
-    color: #2980B9;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.toggle-text a:hover {
-    color: #555;
-}
-
-/* Sign In and Sign Up Pages */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #e9f5f2; /* Light background color */
-}
-
-.container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 15px; /* Rounded corners for container */
-    background-color: #ffffff; /* White background for form */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
-
-h1 {
-    text-align: center;
-    color: #1E90FF;
-    margin-bottom: 20px; /* Spacing below heading */
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #333; /* Darker text for labels */
-}
-
-input {
-    margin-bottom: 20px;
-    padding: 12px;
-    font-size: 14px;
-    border: 2px solid #1E90FF; /* Border color */
-    border-radius: 25px; /* Rounded corners for inputs */
-    transition: border-color 0.3s ease;
-    background-color: #f0f9ff; /* Light blue background */
-}
-
-input:focus {
-    border-color: #00BFFF; /* Change border color on focus */
-    outline: none; /* Remove default outline */
-}
-
-input:invalid {
-    border-color: red; /* Highlight invalid fields */
-}
-
-.submit-btn {
-    padding: 12px 20px;
-    color: white;
-    background-color: #1E90FF; /* Button background color */
-    border: none;
-    border-radius: 25px; /* Rounded corners for button */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 16px; /* Larger text for button */
-}
-
-.submit-btn:hover {
-    background-color: #00BFFF; /* Lighter blue on hover */
+.myShadow {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px; /* Change to match your desired border radius */
+  overflow: hidden; /* This helps prevent content from overflowing */
 }
